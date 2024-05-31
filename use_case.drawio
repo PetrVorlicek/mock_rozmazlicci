@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" modified="2024-05-31T11:59:31.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="eVUfXqLBt4zjuOEyvLx4" version="24.4.10" type="device">
+  <diagram name="Stránka-1" id="cSboJg_X7h_TVp0WkvAs">
+    <mxGraphModel dx="1562" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-1" value="Zákazník" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-2" value="Admin&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="340" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-5" value="Mock Eshop" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="70" width="610" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-6" value="Prohlížet zboží&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Actor%22%20style%3D%22shape%3DumlActor%3BverticalLabelPosition%3Dbottom%3BverticalAlign%3Dtop%3Bhtml%3D1%3BoutlineConnect%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2240%22%20y%3D%22160%22%20width%3D%2240%22%20height%3D%2270%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="80" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-7" value="Vytvořit účet" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="80" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-8" value="Přihlásit se k účtu" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="250" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-9" value="Vytvořit objednávku" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="80" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-10" value="Přidat zboží do objednávky" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="250" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-11" value="Prohlížet stav objednávky" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="80" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-13" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" edge="1" parent="yt_uA1_KDXSlTS4AcJ-t-5" source="yt_uA1_KDXSlTS4AcJ-t-10" target="yt_uA1_KDXSlTS4AcJ-t-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="400" as="sourcePoint" />
+            <mxPoint x="330" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-31" value="&amp;lt;&amp;lt; Extends &amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yt_uA1_KDXSlTS4AcJ-t-13">
+          <mxGeometry x="-0.0285" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-14" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" edge="1" parent="yt_uA1_KDXSlTS4AcJ-t-5" source="yt_uA1_KDXSlTS4AcJ-t-8" target="yt_uA1_KDXSlTS4AcJ-t-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="296" y="350" as="sourcePoint" />
+            <mxPoint x="220" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-32" value="&amp;lt;&amp;lt; Extends &amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yt_uA1_KDXSlTS4AcJ-t-14">
+          <mxGeometry x="0.0363" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-15" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" edge="1" parent="yt_uA1_KDXSlTS4AcJ-t-5" source="yt_uA1_KDXSlTS4AcJ-t-8" target="yt_uA1_KDXSlTS4AcJ-t-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="440" as="sourcePoint" />
+            <mxPoint x="199" y="383" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-33" value="&amp;lt;&amp;lt;Extends &amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yt_uA1_KDXSlTS4AcJ-t-15">
+          <mxGeometry x="-0.2497" y="-4" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-16" value="Přidávat / Upravovat zboží" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="410" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-17" value="Spravovat zákazníky" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="410" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-18" value="Vyřizovat/měnit stav zásilky" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yt_uA1_KDXSlTS4AcJ-t-5">
+          <mxGeometry x="410" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-1" target="yt_uA1_KDXSlTS4AcJ-t-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="90" as="sourcePoint" />
+            <mxPoint x="80" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-25" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-1" target="yt_uA1_KDXSlTS4AcJ-t-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="90" as="sourcePoint" />
+            <mxPoint x="80" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-1" target="yt_uA1_KDXSlTS4AcJ-t-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="90" as="sourcePoint" />
+            <mxPoint x="80" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-27" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-1" target="yt_uA1_KDXSlTS4AcJ-t-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="100" as="sourcePoint" />
+            <mxPoint x="90" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-2" target="yt_uA1_KDXSlTS4AcJ-t-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="110" as="sourcePoint" />
+            <mxPoint x="100" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-29" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-17" target="yt_uA1_KDXSlTS4AcJ-t-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="120" as="sourcePoint" />
+            <mxPoint x="110" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yt_uA1_KDXSlTS4AcJ-t-30" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="yt_uA1_KDXSlTS4AcJ-t-18" target="yt_uA1_KDXSlTS4AcJ-t-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="130" as="sourcePoint" />
+            <mxPoint x="120" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
