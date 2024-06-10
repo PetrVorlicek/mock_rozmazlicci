@@ -33,9 +33,9 @@
             </div>
             <h2 class="display-6">Portál uživatele</h2>
             <div class="btn-group-vertical" style="width: 100%">
-              <a type="button" class="btn btn-primary">Přihlášení</a>
-              <a type="button" class="btn btn-primary">Registrace</a>
-              <a type="button" class="btn btn-primary">Moje objednávky</a>
+              <a type="button" class="btn btn-primary" href="{% url 'user:user_login' %}">Přihlášení</a>
+              <a type="button" class="btn btn-primary" href="{% url 'user:user_register' %}">Registrace</a>
+              <a type="button" class="btn btn-primary" href="{% url 'user:user_profile' %}">Moje objednávky</a>
             </div>
             <h2 class="display-6">O nás</h2>
             <div class="btn-group-vertical" style="width: 100%">

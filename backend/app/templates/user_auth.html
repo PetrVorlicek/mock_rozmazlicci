@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}
-Rozmazlíčci - registrace
+Rozmazlíčci - {{type}}
 {% endblock%}
 
 {% block content %}
-<h3 class="display-3">Registrace!</h3>
-<form action="{% url 'user:user_register' %}" method="POST">
+<h3 class="display-3">{{type|title}}!</h3>
+{% with 'user:user_'|add:type as full_url %}
+<form action="{% url full_url %}" method="POST">
+    {% endwith %}
     {% csrf_token %}
     {% for field in form %}
     <div class="mb-3">
@@ -27,5 +29,4 @@ Rozmazlíčci - registrace
     {% endfor %}
     <button type="submit" class="btn btn-primary">Odeslat!</button>
 </form>
-
 {% endblock %}
