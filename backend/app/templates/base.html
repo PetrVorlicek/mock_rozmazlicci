@@ -18,7 +18,11 @@
       <h2 class="display-3">Nejlepší mazlíčci z Warhammeru!</h2>
     </div>
   </header>
-
+  {% if request.COOKIES.username %}
+  <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="p-2">Vítejte, {{request.COOKIES.username}}</div>
+  </div>
+  {% endif %}
   <div class="row flex-grow-1">
     <nav class="col-4 ">
       <ul class="list-group">

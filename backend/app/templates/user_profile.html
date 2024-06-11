@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block title %}
-Rozmazlíčci - profil {{username}}
+Rozmazlíčci - profil {{request.COOKIES.username}}
 {% endblock%}
 
 {% block content %}
-<div>Jsi na svém profilu, {{username}}!</div>
+<div>Jsi na svém profilu, {{request.COOKIES.username}}!</div>
 <a type="button" class="btn btn-primary" href="{% url 'user:user_logout' %}">Odhlášení</a>
 {% endblock %}

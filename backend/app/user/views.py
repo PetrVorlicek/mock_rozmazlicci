@@ -53,7 +53,9 @@ def user_login(request):
         login(request, user)
 
         next = request.GET.get("next", "/user/profile")
-        return HttpResponseRedirect(next)
+        response = HttpResponseRedirect(next)
+        response.set_cookie("username", user.username)
+        return response
 
     form = AuthenticationForm()
     return render(request, "user_auth.html", {"form": form, "type": "login"})
@@ -61,10 +63,12 @@ def user_login(request):
 
 @login_required
 def profile(request):
-    return render(request, "user_profile.html", {"username": request.user.username})
+    return render(request, "user_profile.html")
 
 
 @login_required
 def user_logout(request):
     logout(request)
-    return HttpResponseRedirect("/")
+    response = HttpResponseRedirect("/")
+    response.delete_cookie("username")
+    return response
