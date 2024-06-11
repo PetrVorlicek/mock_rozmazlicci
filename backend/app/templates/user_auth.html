@@ -10,6 +10,11 @@ Rozmazlíčci - {{type}}
 <form action="{% url full_url %}" method="POST">
     {% endwith %}
     {% csrf_token %}
+    {% if form.non_field_errors %}
+    <div class="bg-danger text-white rounded text-center">
+        {{form.non_field_errors}}
+    </div>
+    {% endif %}
     {% for field in form %}
     <div class="mb-3">
 

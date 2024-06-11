@@ -41,7 +41,7 @@ def register(request):
 
 def user_login(request):
     if request.method == "POST":
-        form = AuthenticationForm(request.POST)
+        form = AuthenticationForm(data=request.POST)
 
         username = request.POST["username"]
         password = request.POST["password"]
