@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Rozmazlíčci - detail {{object.description}}
+{% endblock%}
+
+{% block content %}
+<div class="container ">
+    <h4></h4>
+    <img src="{{ MEDIA_URL }}{{object.image_path}}" />
+    <p>{{object.description}}</p>
+    <p>Na skladě: {{object.stock}} ks</p>
+    <p>Cena: {{object.price}} CZK</p>
+</div>
+{% endblock %}
